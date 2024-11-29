@@ -50,14 +50,7 @@ int main() {
     int score = 0;
     const int WIN_SCORE = 3;
 
-    // 폰트 및 점수 텍스트 설정
-    sf::Font font;
-    if (!font.loadFromFile("arial.ttf")) {
-        std::cout << "폰트 로딩 실패!" << std::endl;
-    }
-
     sf::Text scoreText;
-    scoreText.setFont(font);
     scoreText.setCharacterSize(30);
     scoreText.setFillColor(sf::Color::White);
     scoreText.setPosition(20, 20);
